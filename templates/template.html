@@ -1,0 +1,15 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Documento PDF</title>
+</head>
+<body>
+    <h1>{{.titulo}}</h1>
+    <p>{{.mensagem}}</p>
+    <ul>
+    {{range $key, $value := .itens}}
+        <li>{{$key}}: {{$value}}</li>
+    {{end}}
+    </ul>
+</body>
+</html> 
