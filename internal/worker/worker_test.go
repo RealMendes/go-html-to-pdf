@@ -1,4 +1,4 @@
-package main
+package worker
 
 import (
 	"testing"
@@ -14,7 +14,7 @@ func TestRenderHTML(t *testing.T) {
 		},
 	}
 
-	html, err := renderHTML(data)
+	html, err := RenderHTML(data)
 	if err != nil {
 		t.Fatalf("Error rendering HTML: %v", err)
 	}
@@ -30,4 +30,4 @@ func TestRenderHTML(t *testing.T) {
 
 func contains(s, substr string) bool {
 	return len(s) >= len(substr) && (s == substr || len(s) > 0 && (contains(s[1:], substr) || contains(s[:len(s)-1], substr)))
-} 
+}

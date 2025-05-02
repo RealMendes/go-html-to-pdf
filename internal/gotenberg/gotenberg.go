@@ -1,4 +1,4 @@
-package main
+package gotenberg
 
 import (
 	"bytes"
@@ -44,4 +44,4 @@ func SendToGotenberg(html string) ([]byte, error) {
 	}
 
 	return pdf, nil
-} 
+}

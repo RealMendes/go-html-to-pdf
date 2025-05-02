@@ -1,4 +1,4 @@
-package main
+package gotenberg
 
 import (
 	"net/http"
@@ -29,4 +29,4 @@ func TestSendToGotenberg(t *testing.T) {
 	if string(pdf) != "PDF MOCK" {
 		t.Errorf("Expected 'PDF MOCK', got: %s", string(pdf))
 	}
-} 
+}
