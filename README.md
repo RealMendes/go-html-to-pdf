@@ -9,7 +9,7 @@ Aplicação em Go para gerar PDFs a partir de HTML dinâmico usando o Gotenberg.
 ## Como rodar
 
 ```bash
-go run main.go worker.go gotenberg.go
+docker-compose up --build
 ```
 
 ## Como usar
